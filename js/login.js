@@ -1,42 +1,46 @@
-function togglePassword(){
-
-let password = document.getElementById("password")
-
-if(password.type === "password"){
-password.type="text"
-}else{
-password.type="password"
+body{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+color:white;
 }
 
-}
+.login-card,
+.register-card{
 
+width:320px;
 
-function toggleRegPassword(){
+padding:40px;
 
-let password = document.getElementById("regPassword")
+border-radius:20px;
 
-if(password.type === "password"){
-password.type="text"
-}else{
-password.type="password"
-}
+background:rgba(255,255,255,.08);
 
-}
+backdrop-filter:blur(20px);
 
-
-function showRegister(){
-
-document.querySelector(".login-card").style.display="none"
-
-document.getElementById("registerCard").style.display="block"
+text-align:center;
 
 }
 
+.register-card{
+display:none;
+}
 
-function showLogin(){
+input{
+width:100%;
+padding:10px;
+margin-bottom:10px;
+border-radius:8px;
+border:none;
+}
 
-document.querySelector(".login-card").style.display="block"
-
-document.getElementById("registerCard").style.display="none"
-
-} 
+button{
+width:100%;
+padding:10px;
+border:none;
+border-radius:20px;
+background:white;
+color:black;
+cursor:pointer;
+}

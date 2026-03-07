@@ -1,58 +1,25 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:system-ui;
-}
-
 body{
-height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
+height:100vh;
 color:white;
 }
-
-/* VIDEO BACKGROUND */
-
-.video-bg{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-object-fit:cover;
-filter:blur(8px) brightness(.5);
-z-index:-2;
-}
-
-.overlay{
-position:fixed;
-width:100%;
-height:100%;
-background:rgba(0,0,0,.5);
-z-index:-1;
-}
-
-
-/* LOGIN CARD */
 
 .login-card,
 .register-card{
 
-width:340px;
+width:320px;
 
 padding:40px;
 
 border-radius:20px;
 
-background:rgba(255,255,255,0.08);
+background:rgba(255,255,255,.08);
 
 backdrop-filter:blur(20px);
 
 text-align:center;
-
-box-shadow:0 25px 50px rgba(0,0,0,.4);
 
 }
 
@@ -60,106 +27,20 @@ box-shadow:0 25px 50px rgba(0,0,0,.4);
 display:none;
 }
 
-
-.icon{
-font-size:32px;
-margin-bottom:10px;
-}
-
-
 input{
-
 width:100%;
-
-padding:12px;
-
-margin-bottom:12px;
-
-border:none;
-
-border-radius:10px;
-
-background:rgba(255,255,255,0.1);
-
-color:white;
-
-}
-
-
-.row{
-display:flex;
-gap:10px;
-}
-
-
-.password-box{
-position:relative;
-}
-
-.password-box i{
-position:absolute;
-right:10px;
-top:12px;
-cursor:pointer;
-}
-
-
-/* BUTTONS */
-
-.btn{
-
-width:100%;
-
-padding:12px;
-
-border:none;
-
-border-radius:20px;
-
-background:white;
-
-color:black;
-
-font-weight:600;
-
-cursor:pointer;
-
-margin-top:10px;
-
-}
-
-
-.admin-btn{
-
-width:100%;
-
 padding:10px;
-
+margin-bottom:10px;
+border-radius:8px;
 border:none;
+}
 
+button{
+width:100%;
+padding:10px;
+border:none;
 border-radius:20px;
-
-background:#444;
-
-color:white;
-
+background:white;
+color:black;
 cursor:pointer;
-
 }
-
-
-.divider{
-margin:20px 0;
-opacity:.7;
-}
-
-
-.signup{
-margin-top:15px;
-font-size:13px;
-}
-
-.signup a{
-color:#4aa3ff;
-cursor:pointer;
-} 

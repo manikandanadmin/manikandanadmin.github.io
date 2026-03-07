@@ -1,15 +1,18 @@
-function showRegister(){
+let user = localStorage.getItem("vmk_user")
 
-document.getElementById("loginForm").style.display="none"
+if(!user){
 
-document.getElementById("registerForm").style.display="block"
+window.location.href="login.html"
 
 }
 
-function showLogin(){
+document.getElementById("userEmail").innerText=user
 
-document.getElementById("loginForm").style.display="block"
 
-document.getElementById("registerForm").style.display="none"
+function logout(){
 
-} 
+localStorage.removeItem("vmk_user")
+
+window.location.href="login.html"
+
+}

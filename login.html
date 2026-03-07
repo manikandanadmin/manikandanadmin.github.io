@@ -1,28 +1,21 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Sign In | VMK Networks</title>
+<title>Login</title>
 
 <link rel="stylesheet" href="css/login.css">
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 </head>
-
 
 <body>
 
-<!-- VIDEO BACKGROUND -->
-
 <video autoplay muted loop class="video-bg">
-<source src="video/background.mp4" type="video/mp4">
+<source src="video/background.mp4">
 </video>
 
 <div class="overlay"></div>
@@ -30,195 +23,47 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 
 <div class="login-card">
 
-<i class="fa fa-user-circle icon"></i>
-
 <h2>Sign In</h2>
-
-<p>Please enter your details to sign in.</p>
-
-
-<!-- LOGIN FORM -->
 
 <form id="loginForm">
 
-<input type="email" placeholder="Enter your email address">
+<input id="email" type="email" placeholder="Email">
 
-<div class="password-box">
+<input id="password" type="password" placeholder="Password">
 
-<input type="password" id="password" placeholder="Password">
-
-<i class="fa fa-eye" onclick="togglePassword()"></i>
-
-</div>
-
-<button class="btn">Sign In</button>
+<button type="submit">Login</button>
 
 </form>
 
-
-<div class="divider">OR</div>
-
-
-<button class="admin-btn">
-Admin Login
-</button>
-
-
-<p class="signup">
-
-Don't have an account?
-
-<a onclick="showRegister()">Sign up</a>
-
+<p>
+No account?
+<a onclick="showRegister()">Register</a>
 </p>
 
 </div>
 
-
-
-<!-- REGISTER CARD -->
 
 <div class="register-card" id="registerCard">
 
 <h2>Create Account</h2>
 
+<form id="registerForm">
 
-<form>
+<input id="first" placeholder="First name">
+<input id="last" placeholder="Last name">
+<input id="regEmail" placeholder="Email">
+<input id="phone" placeholder="Phone">
+<input id="address" placeholder="Address (optional)">
+<input id="pincode" placeholder="Pincode">
+<input id="regPass" type="password" placeholder="Password">
 
-<div class="row">
-
-<input placeholder="First Name">
-
-<input placeholder="Last Name">
-
-</div>
-
-<input placeholder="Email">
-
-<input placeholder="Phone">
-
-<input placeholder="Address (Optional)">
-
-<input placeholder="Pin Code">
-
-
-<div class="password-box">
-
-<input type="password" id="regPassword" placeholder="Password">
-
-<i class="fa fa-eye" onclick="toggleRegPassword()"></i>
-
-</div>
-
-<input type="password" placeholder="Confirm Password">
-
-
-<button class="btn">Register</button>
+<button type="submit">Register</button>
 
 </form>
 
-
-<p class="signup">
-
-Already have an account?
-
-<a onclick="showLogin()">Sign In</a>
-
-</p>
-
 </div>
-
 
 <script src="js/login.js"></script>
 
 </body>
-=======
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Sign In | VMK Networks</title>
-
-<link rel="stylesheet" href="css/login.css">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-</head> 
-
-<body>
-
-<!-- VIDEO BACKGROUND -->
-
-<video autoplay muted loop class="video-bg">
-<source src="video/background.mp4" type="video/mp4">
-</video>
-
-<div class="overlay"></div>
-
-
-<!-- LOGIN CARD -->
-
-<div class="login-card">
-
-<i class="fa fa-user-circle icon"></i>
-
-<h2>Sign In</h2>
-
-<p>Please enter your details to sign in.</p>
-
-
-<form id="loginForm">
-
-<div class="input-box">
-
-<input type="text" id="username" placeholder="Enter your email address">
-
-</div>
-
-
-<div class="input-box password">
-
-<input type="password" id="password" placeholder="Password">
-
-<i class="fa fa-eye" onclick="togglePassword()"></i>
-
-</div>
-
-<button type="submit" class="login-btn">
-
-Sign In
-
-</button>
-
-</form>
-
-
-<div class="divider">OR</div>
-
-<button class="google-btn">
-
-<img src="https://img.icons8.com/color/20/google-logo.png">
-
-Continue with Google
-
-</button>
-
-<p class="signup">
-
-Don't have an account? <a href="#">Sign up</a>
-
-</p>
-
-</div>
-
-
-<script src="js/login.js"></script>
-
-</body>
->>>>>>> 343bb5d1887d2d6db9432d554a195bd76045d06e
 </html>
