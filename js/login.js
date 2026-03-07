@@ -39,4 +39,4 @@ document.querySelector(".login-card").style.display="block"
 
 document.getElementById("registerCard").style.display="none"
 
-}
+} 
